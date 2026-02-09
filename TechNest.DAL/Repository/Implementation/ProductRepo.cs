@@ -1,10 +1,4 @@
-﻿
-
-
-
-using TechNest.DAL.DataBase;
-
-namespace TechNest.DAL.Repository.Implementation
+﻿namespace TechNest.DAL.Repository.Implementation
 {
     public class ProductRepo : IProductRepo
     {
@@ -40,7 +34,7 @@ namespace TechNest.DAL.Repository.Implementation
         public bool Add(Product product)
         {
              
-            var pro = new Product(product.Name, product.Price, "Ahmed Ezz");
+            var pro = new Product(product.Name, product.Price, product.CategoryId,"Ahmed Ezz");
             _context.Products.Add(pro);
             int count = _context.SaveChanges();
             if(count > 0)

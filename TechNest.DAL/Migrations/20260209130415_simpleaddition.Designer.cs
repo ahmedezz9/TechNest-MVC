@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechNest.DAL.DataBase;
 
@@ -11,9 +12,11 @@ using TechNest.DAL.DataBase;
 namespace TechNest.DAL.Migrations
 {
     [DbContext(typeof(TechNestDbContext))]
-    partial class TechNestDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260209130415_simpleaddition")]
+    partial class simpleaddition
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

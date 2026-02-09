@@ -12,11 +12,14 @@ namespace TechNest.DAL.Entity
         public bool IsDeleted { get; private set; }
         public string? DeletedBy { get; private set; }
         public DateTime DeletedAt { get; private set; }
-        public Product(string name,double price,string createdby)
+        public int CategoryId { get; private set; }
+        public Category Category { get; private set; }
+        public Product(string name,double price,int catid,string createdby)
         {
             Name = name;
             Price = price;
             CreatedBy = createdby;
+            CategoryId= catid;
             CreatedAt = DateTime.Now;
             IsDeleted = false;
         }

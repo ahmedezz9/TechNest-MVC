@@ -1,7 +1,4 @@
-﻿
-using System.Linq.Expressions;
-
-namespace TechNest.DAL.Repository.Abstraction
+﻿namespace TechNest.DAL.Repository.Abstraction
 {
     public interface IProductRepo
     {

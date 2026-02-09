@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -26,28 +27,50 @@ nav {
 }
 nav a {
         color: white !important;
+        font-weight:bold;
+}
 
-}
-.carousel-indicators{
-    background-color:white;
-}
-    .carousel-indicators button {
-        
-    }
+
     .carousel-indicators [data-bs-target] {
-        background-color: #1E3A8A !important;
+        background-color: white !important;
         border-radius: 50%;
         width: 15px !important;
         height: 15px !important;
     }
 
 .bottom {
+    background-image: url('../imgs/person-using-laptop-with-coffee-wooden-table.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.secondbottom {
+    background-image: url('../imgs/sfmre9evbgtmvhouo58fps-970-80.jpg.webp');
+    background-size: cover;
+    background-position: center;
+}
+.thirdbottom {
+    
     background-image: url('../imgs/huawei-watch-2-mwc-2017-best-smartwatches-wallpaper-preview.jpg');
     background-size: cover;
     background-position: center;
 }
-.layer{
-    width:100%;
-    height:100%;
-    background-color: rgba(0,0,0,0.5);
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+/*start featured products*/
+featured-products h3, p {
+    color: #1E3A8A;
+}
+.first-product-img img {
+    transition: all 1s ease-in-out;
+}
+.first-product-img:hover img {
+    transform: scale(1.3) rotate(10deg);
+}
+
+/*end featured products*/
+footer {
+    background-color: #1E3A8A;
 }
