@@ -20,3 +20,34 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+nav {
+    background-color: #1E3A8A !important;
+}
+nav a {
+        color: white !important;
+
+}
+.carousel-indicators{
+    background-color:white;
+}
+    .carousel-indicators button {
+        
+    }
+    .carousel-indicators [data-bs-target] {
+        background-color: #1E3A8A !important;
+        border-radius: 50%;
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+.bottom {
+    background-image: url('../imgs/huawei-watch-2-mwc-2017-best-smartwatches-wallpaper-preview.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.layer{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+}

@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TechNest.DAL.DataBase;
+
 namespace TechNest.PL
 {
     public class Program
@@ -8,7 +11,7 @@ namespace TechNest.PL
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddDbContext<TechNestDbContext>(options => { options.UseSqlServer(builder.Configuration.GetConnectionString("default"));});
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
